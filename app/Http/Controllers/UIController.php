@@ -11,10 +11,6 @@ class UIController extends Controller
         return view('index');
     }
     
-    // Page
-    public function welcome() {
-        return view('welcome');
-    }
 
     public function dashboardController() {
         return view('.dashboard');
