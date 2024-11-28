@@ -17,7 +17,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
     <!-- <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}"> -->
-    <link rel="stylesheet" href="{{ asset('assets/style/css/style.css') }}">
+    <link rel="stylesheet" href="https://fayshalrana.github.io/company-dashboard/public/assets/css/style.css">
 
     @yield('styles')
 </head>
