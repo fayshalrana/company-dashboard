@@ -64,7 +64,7 @@
                 </div>
             </div>
             <div class="img-container">
-                <img src="{{URL::asset('assets/img/chart.webp')}}" alt="">
+                <img src="{{ env('BASE_resources_URL') }}assets/img/chart.webp" alt="">
             </div>
         </div>
     </div>
@@ -86,7 +86,7 @@
                 </div>
             </div>
             <div class="img-container">
-                <img src="{{URL::asset('assets/img/chart.webp')}}" alt="">
+                <img src="{{ env('BASE_resources_URL') }}assets/img/chart.webp" alt="">
             </div>
         </div>
     </div>
@@ -108,7 +108,7 @@
                 </div>
             </div>
             <div class="img-container">
-                <img src="{{URL::asset('assets/img/chart.webp')}}" alt="">
+                <img src="{{ env('BASE_resources_URL') }}assets/img/chart.webp" alt="">
             </div>
         </div>
     </div>

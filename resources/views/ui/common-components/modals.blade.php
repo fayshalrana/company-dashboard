@@ -14,7 +14,7 @@
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLongTitle">Detailed Information</h5>
                 <button type="button" class="close-btn" data-dismiss="modal">
-                    <img src="{{URL::asset('assets/img/svg/close-icon.svg')}}" alt="close-icon">
+                    <img src=" {{ env('BASE_resources_URL') }}assets/img/svg/close-icon.svg" alt="close-icon">
                 </button>
             </div>
             <div class="modal-body">

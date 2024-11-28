@@ -128,7 +128,7 @@ $subscriptions = [
                         </div>
                     </div>
                     <div class="img-container">
-                        <img src="{{URL::asset('assets/img/chart.webp')}}" alt="chart">
+                        <img src="{{ env('BASE_resources_URL') }}assets/img/chart.webp" alt="chart">
                     </div>
                 </div>
             </div>
@@ -150,7 +150,7 @@ $subscriptions = [
                         </div>
                     </div>
                     <div class="img-container">
-                        <img src="{{URL::asset('assets/img/chart.webp')}}" alt="chart">
+                        <img src="{{ env('BASE_resources_URL') }}assets/img/chart.webp" alt="chart">
                     </div>
                 </div>
             </div>
@@ -172,7 +172,7 @@ $subscriptions = [
                         </div>
                     </div>
                     <div class="img-container">
-                        <img src="{{URL::asset('assets/img/Chart-down.webp')}}" alt="Chart-down">
+                        <img src="{{ env('BASE_resources_URL') }}assets/img/Chart-down.webp" alt="Chart-down">
                     </div>
                 </div>
             </div>
@@ -213,10 +213,10 @@ $subscriptions = [
                         <td class="tdd-container">
                             <div class="td-show-btn">
                                 <button class="td-d-show">
-                                    <img src="{{ URL::asset('assets/img/svg/chevron-upt.svg') }}"
+                                    <img src="{{ env('BASE_resources_URL') }}assets/img/svg/chevron-upt.svg"
                                         class="tsb-right-arrow" alt="">
-                                    <img src="{{ URL::asset('assets/img/svg/chevron-upd.svg') }}" class="tsb-down-arrow"
-                                        alt="">
+                                    <img src="{{ env('BASE_resources_URL') }}assets/img/svg/chevron-upd.svg"
+                                        class="tsb-down-arrow" alt="">
                                 </button>
                                 <span>{{ $subscription['id'] }}</span>
                             </div>
@@ -313,7 +313,7 @@ $subscriptions = [
         </div>
         <div class="empty-state d-none">
             <div class="empty-state-img">
-                <img src="{{URL::asset('assets/img/svg/empty-state.svg')}}" alt="empty-state">
+                <img src="{{ env('BASE_resources_URL') }}assets/img/svg/empty-state.svg" alt="empty-state">
             </div>
             <p>It looks like you don’t have
                 any processing yet.</p>
@@ -329,7 +329,7 @@ $subscriptions = [
             <div class="modal-header">
                 <h5 class="modal-title" id="subscriptionModalLongTitle">Transaction Information</h5>
                 <button type="button" class="close-btn" data-dismiss="modal">
-                    <img src="{{URL::asset('assets/img/svg/close-icon.svg')}}" alt="close-icon">
+                    <img src="{{ env('BASE_resources_URL') }}assets/img/svg/close-icon.svg" alt="close-icon">
                 </button>
             </div>
             <div class="modal-body">

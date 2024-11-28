@@ -1,7 +1,7 @@
 <div class="info-cards">
     <div class="info-card">
         <div class="info-img">
-            <img src="{{URL::asset('assets/img/svg/paypal.svg')}}" alt="paypal">
+            <img src=" {{ env('BASE_resources_URL') }}assets/img/svg/paypal.svg" alt="paypal">
         </div>
         <div class="info-text">
             <h3>Paypal</h3>
@@ -14,7 +14,7 @@
     </div>
     <div class="info-card">
         <div class="info-img">
-            <img src="{{URL::asset('assets/img/svg/Stripe.svg')}}" alt="Stripe">
+            <img src=" {{ env('BASE_resources_URL') }}assets/img/svg/Stripe.svg" alt="Stripe">
         </div>
         <div class="info-text">
             <h3>Stripe</h3>
@@ -27,7 +27,7 @@
     </div>
     <div class="info-card">
         <div class="info-img">
-            <img src="{{URL::asset('assets/img/svg/Sofort.svg')}}" alt="Sofort">
+            <img src=" {{ env('BASE_resources_URL') }}assets/img/svg/Sofort.svg" alt="Sofort">
         </div>
         <div class="info-text">
             <h3>Sofort</h3>

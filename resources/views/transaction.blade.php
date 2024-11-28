@@ -164,7 +164,7 @@ $transactions = [
                         </div>
                     </div>
                     <div class="img-container">
-                        <img src="{{URL::asset('assets/img/chart.webp')}}" alt="">
+                        <img src="{{ env('BASE_resources_URL') }}assets/img/chart.webp" alt="">
                     </div>
                 </div>
             </div>
@@ -186,7 +186,7 @@ $transactions = [
                         </div>
                     </div>
                     <div class="img-container">
-                        <img src="{{URL::asset('assets/img/chart.webp')}}" alt="">
+                        <img src="{{ env('BASE_resources_URL') }}assets/img/chart.webp" alt="">
                     </div>
                 </div>
             </div>
@@ -208,7 +208,7 @@ $transactions = [
                         </div>
                     </div>
                     <div class="img-container">
-                        <img src="{{URL::asset('assets/img/chart-down.webp')}}" alt="">
+                        <img src="{{ env('BASE_resources_URL') }}assets/img/chart-down.webp" alt="">
                     </div>
                 </div>
             </div>
@@ -240,7 +240,7 @@ $transactions = [
                 <div class="dropdown filter-dropdown-container">
                     <button class="filter-dropdown-btn dropdown-toggle" type="button" id="filterDropdown"
                         data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="{{URL::asset('assets/img/svg/filter-lines.svg')}}" alt="">
+                        <img src="{{ env('BASE_resources_URL') }}assets/img/svg/filter-lines.svg" alt="">
                     </button>
                     <div class="dropdown-menu p-3" aria-labelledby="filterDropdown">
                         <form>
@@ -275,10 +275,10 @@ $transactions = [
                         <td class="tdd-container">
                             <div class="td-show-btn">
                                 <button class="td-d-show">
-                                    <img src="{{URL::asset('assets/img/svg/chevron-upt.svg')}}" class="tsb-right-arrow"
-                                        alt="">
-                                    <img src="{{URL::asset('assets/img/svg/chevron-upd.svg')}}" class="tsb-down-arrow"
-                                        alt="">
+                                    <img src="{{ env('BASE_resources_URL') }}assets/img/svg/chevron-upt.svg"
+                                        class="tsb-right-arrow" alt="">
+                                    <img src="{{ env('BASE_resources_URL') }}assets/img/svg/chevron-upd.svg"
+                                        class="tsb-down-arrow" alt="">
                                 </button>
                                 <span><?= htmlspecialchars($transaction['id']); ?></span>
                             </div>
@@ -377,7 +377,7 @@ $transactions = [
         </div>
         <div class="empty-state d-none">
             <div class="empty-state-img">
-                <img src="{{URL::asset('assets/img/svg/empty-state.svg')}}" alt="empty-state">
+                <img src="{{ env('BASE_resources_URL') }}assets/img/svg/empty-state.svg" alt="empty-state">
             </div>
             <p>It looks like you don’t have
                 any processing yet.</p>
@@ -393,7 +393,7 @@ $transactions = [
             <div class="modal-header">
                 <h5 class="modal-title" id="transactionModalLongTitle">Transaction Information</h5>
                 <button type="button" class="close-btn" data-dismiss="modal">
-                    <img src="{{URL::asset('assets/img/svg/close-icon.svg')}}" alt="close-icon">
+                    <img src="{{ env('BASE_resources_URL') }}assets/img/svg/close-icon.svg" alt="close-icon">
                 </button>
             </div>
             <div class="modal-body">

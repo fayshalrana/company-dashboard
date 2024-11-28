@@ -155,10 +155,10 @@ $transactions = [
                     <td class="tdd-container">
                         <div class="td-show-btn">
                             <button class="td-d-show">
-                                <img src="{{URL::asset('assets/img/svg/chevron-upt.svg')}}" class="tsb-right-arrow"
-                                    alt="">
-                                <img src="{{URL::asset('assets/img/svg/chevron-upd.svg')}}" class="tsb-down-arrow"
-                                    alt="">
+                                <img src="{{ env('BASE_resources_URL') }}assets/img/svg/chevron-upt.svg"
+                                    class="tsb-right-arrow" alt="">
+                                <img src="{{ env('BASE_resources_URL') }}assets/img/svg/chevron-upd.svg"
+                                    class="tsb-down-arrow" alt="">
                             </button>
                             <span>{{ $transaction['id'] }}</span> <!-- Accessing array index -->
                         </div>
@@ -260,7 +260,7 @@ $transactions = [
         </div>
         <div class="empty-state d-none">
             <div class="empty-state-img">
-                <img src="{{URL::asset('assets/img/svg/empty-state.svg')}}" alt="empty-state">
+                <img src="{{ env('BASE_resources_URL') }}assets/img/svg/empty-state.svg" alt="empty-state">
             </div>
             <p>It looks like you don’t have
                 any processing yet.</p>
@@ -276,7 +276,7 @@ $transactions = [
             <div class="modal-header">
                 <h5 class="modal-title" id="transactionModalLongTitle">Transaction Information</h5>
                 <button type="button" class="close-btn" data-dismiss="modal">
-                    <img src="{{URL::asset('assets/img/svg/close-icon.svg')}}" alt="close-icon">
+                    <img src="{{ env('BASE_resources_URL') }}assets/img/svg/close-icon.svg" alt="close-icon">
                 </button>
             </div>
             <div class="modal-body">
@@ -356,7 +356,7 @@ $transactions = [
             <div class="modal-header">
                 <h5 class="modal-title" id="AddPayoutModalLongTitle">Add Your Payout Details</h5>
                 <button type="button" class="close-btn" data-dismiss="modal">
-                    <img src="{{URL::asset('assets/img/svg/close-icon.svg')}}" alt="close-icon">
+                    <img src="{{ env('BASE_resources_URL') }}assets/img/svg/close-icon.svg" alt="close-icon">
                 </button>
             </div>
             <div class="modal-body">
@@ -403,7 +403,7 @@ $transactions = [
 <div class="toast-container custom-success-toast">
     <div id="payoutsuccess" class="toast w-auto" role="alert" aria-live="assertive" aria-atomic="true">
         <div class="toast-body">
-            <img src="{{URL::asset('assets/img/svg/alert-circle.svg')}}">
+            <img src="{{ env('BASE_resources_URL') }}assets/img/svg/alert-circle.svg">
             <span>Payout Details successfully added!</span>
         </div>
     </div>

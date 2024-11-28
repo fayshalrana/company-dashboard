@@ -2,7 +2,7 @@
     <div class="sidebar-container">
         <div class="sidebar-header">
             <div class="logo-container">
-                <img src="{{URL::asset('assets/img/Logo.webp')}}" alt="">
+                <img src=" {{ env('BASE_resources_URL') }}assets/img/Logo.webp" alt="">
             </div>
             <h5>Company</h5>
             <a href="javascript:" class="close-menu ms-auto" id="closeHam">
@@ -132,7 +132,7 @@
                     class="custom-dropdown-toggle dropdown-toggle {{ Route::is('profile') ? 'active' : '' }}"
                     type="button" data-bs-toggle="dropdown" aria-expanded="false">
                     <div class="img-container">
-                        <img src="{{URL::asset('assets/img/usr-profile.webp')}}" alt="">
+                        <img src=" {{ env('BASE_resources_URL') }}assets/img/usr-profile.webp" alt="">
                     </div>
                     <div class="content">
                         <p class="title">Claire Littleton</p>
