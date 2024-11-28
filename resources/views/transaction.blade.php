@@ -208,7 +208,7 @@ $transactions = [
                         </div>
                     </div>
                     <div class="img-container">
-                        <img src="{{ env('BASE_resources_URL') }}assets/img/chart-down.webp" alt="">
+                        <img src="{{ env('BASE_resources_URL') }}assets/img/Chart-down.webp" alt="">
                     </div>
                 </div>
             </div>
