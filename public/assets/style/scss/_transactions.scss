@@ -1,0 +1,20 @@
+.Transactions {
+    .smoothsWipe-table .table tbody tr td {
+        a {
+            color: #2c2b32;
+            text-decoration: none;
+            &:hover {
+                background: linear-gradient(45deg, #5b8ee6, #712da7);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+    }
+}
+
+// Transaction Modal
+.transactionModal {
+    .modal-dialog .modal-content .modal-body .info-box .info-item .password-label input {
+        max-width: 30px;
+    }
+}

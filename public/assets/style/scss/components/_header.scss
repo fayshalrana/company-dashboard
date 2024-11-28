@@ -1,0 +1,29 @@
+header{
+    position: sticky;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background-color: $white;
+
+    @media only screen and (min-width: 992px) {
+        display: none;
+    }
+
+    .header-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+        padding: 0 16px;
+
+        .logo-container{
+            width: 40px;
+
+            img{
+                width: 100%;
+            }
+        }
+    }
+}

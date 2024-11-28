@@ -1,0 +1,134 @@
+#modals {
+    height: 100%;
+}
+
+.base-modal {
+    .modal-dialog {
+        max-width: 460px;
+        width: 100%;
+        margin: 0 auto;
+        @media only screen and (max-width: 767.98px) {
+            max-width: 343px;
+            width: 100%;
+        }
+        .modal-content {
+            border: 8px;
+            .modal-header {
+                padding: 24px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-bottom: 1px solid #eaedf3;
+                .modal-title {
+                    font-size: 18px;
+                    font-weight: 500;
+                    line-height: 21.6px;
+                    color: #2c2b32;
+                }
+                .close-btn {
+                    border: none;
+                    outline: none;
+                    box-shadow: none;
+                    background-color: transparent;
+                    width: 16px;
+                    height: 16px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 0;
+                    img {
+                        width: 9.33px;
+                        height: 9.33px;
+                    }
+                }
+            }
+            .modal-body {
+                padding: 20px 24px 24px;
+                .info-box {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+                    .info-item {
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        align-items: center;
+                        @media only screen and (max-width: 767.98px) {
+                            display: flex;
+                            h4{
+                                width: 7rem;
+                            }
+                        }
+                        h4 {
+                            font-size: 14px;
+                            font-weight: 400;
+                            line-height: 24px;
+                            color: #696c80;
+                            margin: 0;
+                        }
+                        h3 {
+                            font-size: 14px;
+                            font-weight: 500;
+                            line-height: 16px;
+                            color: #2c2b32;
+                            margin: 0;
+                        }
+                        .password-label {
+                            display: flex;
+                            align-items: center;
+                            gap: 8px;
+                            input {
+                                max-width: 180px;
+                                border: none;
+                                outline: none;
+                                font-size: 14px;
+                                font-weight: 500;
+                                line-height: 16px;
+                                color: #2c2b32;
+                            }
+                            .eye-wrapper {
+                                cursor: pointer;
+
+                                i {
+                                    // color: $secondary-4;
+
+                                    svg {
+                                        // color: $secondary-4;
+                                        display: none;
+                                    }
+
+                                    &.fa-eye-slash {
+                                        .eye-slash {
+                                            display: block;
+                                        }
+                                    }
+
+                                    &.fa-eye {
+                                        .eye {
+                                            display: block;
+                                        }
+                                    }
+                                }
+
+                                .fa-eye-slash {
+                                    &:before {
+                                        // content: "\f070";
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .modal-footer{
+                padding: 0 24px 24px;
+                display: flex;
+                align-items: center;
+                border: none;
+                gap: 12px;
+                button{
+                    flex: 1 1 0%;
+                }
+            }
+        }
+    }
+}

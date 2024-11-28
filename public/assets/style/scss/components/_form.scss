@@ -1,0 +1,250 @@
+.form-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    .form-container{
+        display: block;
+        width: 100%;
+        position: relative;
+
+        label{
+            display: block;
+            margin-bottom: 8px;
+            @include para-medium($secondary-text);
+        }
+
+        input{
+            border: 1px solid $border-gray;
+            background-color: $white;
+            padding: 10px 14px;
+            border-radius: 8px;
+            display: block;
+            width: 100%;
+            @include para-medium($input-text);
+            line-height: 24px;
+
+            &::-webkit-input-placeholder{
+                @include para-medium($placeholder-text);
+            }
+        }
+
+        input[type=submit]{
+            width: auto;
+            color: $white;
+            padding: 9px 24px;
+        }
+
+        .search-input-container{
+            position: relative;
+            input{
+                padding: 12px 16px 12px 40px;
+                border-radius: 12px;
+
+                @include para-small($secondary-text);
+
+                &::-webkit-input-placeholder{
+                    @include para-small($placeholder-text);
+                }
+            }
+            .search-icon{
+                position: absolute;
+                left: 14px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+
+        .eye-wrapper{
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+
+            i{
+                // color: $secondary-4;
+
+                svg{
+                    // color: $secondary-4;
+                    display: none;
+                }
+
+                &.fa-eye-slash{
+                    .eye-slash{
+                        display: block;
+                    }
+                }
+
+                &.fa-eye{
+                    .eye{
+                        display: block;
+                    }
+                }
+            }
+
+            .fa-eye-slash{
+                &:before{
+                    // content: "\f070";
+                }
+            }
+        }
+
+        .file-input{
+            border: 2px dashed $border-gray;
+            background-color: $brand-gray;
+            height: 180px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 16px;
+            
+            @include para-medium($input-text);
+            line-height: 24px;
+
+            @media only screen and (max-width: 576px){
+                height: 120px;
+            }
+        
+        }
+
+        .file-upload-container{
+
+            input[type=file]{
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                opacity: 0;
+                cursor: pointer;
+            }
+
+            .uploaded-file-container{
+                display: none;
+                position: absolute;
+                top: 4px;
+                bottom: 4px;
+                right: 4px;
+                left: 4px;
+                transition: all 0.4s ease-in-out;
+            
+                .uploaded-file{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center center;
+                    border-radius: 16px;
+                }
+
+                &:hover{
+                    &::before{
+                        content: url('../../../../assets/img/svg/cam-icon.svg');
+                        background-color: $secondary-4;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        border-radius: 16px;
+                        transition: all 0.4s ease-in-out;
+                    }
+                }
+
+                &::after{
+                    display: none;
+                }
+
+            }
+
+            .upload-file-option{
+                border: 1px solid $border-gray;
+                background-color: $white;
+                border-radius: 12px;
+                top: 8px;
+                padding: 8px;
+                transform: translate(30%, 100%) !important;
+
+                li{
+                    a{
+                        border-radius: 8px;
+                        padding: 8px;
+                        transition: all 0.2s ease-in-out;
+                        &:hover{
+                            background-color: $light-blue;
+                        }
+                    }
+                }
+
+                &.mobile-version{
+                    transform: none !important;
+                    display: flex;
+                    gap: 8px;
+                    align-items: center;
+                    justify-content: flex-start;
+                    border: 0;
+                    width: auto;
+                    margin-bottom: 0;
+                    padding: 0;
+                    padding-top: 8px;
+
+                    .primary-btn{
+                        padding: 4px 16px;
+                    }
+
+                    .secondary-btn{
+                        padding: 4px 16px;
+                        border: 1px solid $border-gray;
+                    }
+                }
+            }
+
+            &.mobile-verion{
+                .file-input{
+                    max-width: 120px;
+                }
+                .uploaded-file-container{
+                    max-width: calc(120px - 10px);
+                    max-height: calc(120px - 10px);
+                }
+            }
+
+        }
+    }
+}
+
+.settings-form-container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+
+    @media only screen and (max-width: 576px){
+        flex-direction: column;
+    }
+
+    .form-card{
+        border-radius: 16px;
+        padding: 24px;
+        background-color: $white;
+        gap: 14px 0;
+
+        &.flex-card{
+            flex: 1;
+        }
+
+        &.xs-card{
+            width: 228px;
+        }
+
+        @media only screen and (max-width: 576px){
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,41 @@
+@mixin h4($color){
+    font-size: 32px;
+    color: $color;
+    font-weight: 600;
+    line-height: 38px;
+}
+
+@mixin h5($color, $fw){
+    font-size: 21px;
+    color: $color;
+    font-weight: $fw;
+    line-height: 25.41px;
+}
+
+@mixin para-large($color){
+    font-size: 20px;
+    color: $color;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+@mixin para-medium-2($color){
+    font-size: 16px;
+    color: $color;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+@mixin para-medium($color){
+    font-size: 14px;
+    color: $color;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+@mixin para-small($color){
+    font-size: 12px;
+    color: $color;
+    font-weight: 500;
+    line-height: 16px;
+}

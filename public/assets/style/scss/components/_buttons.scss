@@ -1,0 +1,56 @@
+#buttons{
+    height: 100%;
+    button{
+        width: 8rem;
+    }
+}
+
+.primary-btn {
+    padding: 11px;
+    border: none;
+    outline: none;
+    background: linear-gradient(150deg, #5B8EE6 10.62%, #712DA7 70.63%);
+    color: #ffffff;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    background-size: 200%; 
+    background-position: left; 
+    transition: background-position 0.4s ease-in-out; 
+  white-space: nowrap;
+    &:hover {
+      background-position: right;
+      color: $white;
+    }
+    &:active{
+        transform: scale(.98);
+    }
+    &.focus{
+      color: $white;
+    }
+  }
+
+.secondary-btn {
+    padding: 11px;
+    border: 1px solid transparent;
+    outline: none;
+    background: transparent;
+    color: black;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    transition: all 0.4s ease-in-out; 
+  
+    &:hover {
+      border: 1px solid black;
+    }
+    &:active{
+        transform: scale(.98);
+    }
+    &.hovered{
+      border: 1px solid #EAEDF3;
+      color: $input-text;
+    }
+  }

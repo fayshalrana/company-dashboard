@@ -1,0 +1,216 @@
+.daterange-container {
+    position: relative;
+    width: auto;
+
+    input {
+        border: 1px solid #F4F4F4 !important;
+        border-radius: 12px !important;
+        padding: 16px 30px 16px 16px !important;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 15.96px;
+        letter-spacing: -0.01em;
+        width: 100%;
+        max-width: 7rem; 
+        overflow: hidden; 
+        transition: max-width 0.3s ease; 
+        cursor: pointer;
+        user-select: none;
+        @media only screen and (max-width: 767.98px) {
+            border-radius: 8px !important;
+            padding: 7px 12px !important;
+            font-size: 0px;
+            height: 100%;
+        }
+    }
+
+    &:before {
+        content: '';
+        width: 20px;
+        height: 20px;
+        right: 16px;
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+        background-image: url(../../img/svg/dpcalendar.svg);
+        background-size: cover;
+        background-position: center;
+        pointer-events: none;
+
+        @media only screen and (max-width: 767.98px) {
+            width: 14px;
+            height: 14px;
+            right: 13px;
+        }
+    }
+}
+
+
+.daterangepicker{
+    border-radius: 16px;
+    border:none;
+    box-shadow: 0px 8px 20px 0px #2C2B3214;
+    // left: 460.263px !important;
+    // width: 53rem !important; 
+    @media only screen and (max-width: 767.98px) {
+        width: 328px;
+    }
+
+    &:before{
+        display: none;
+    }
+    &:after{
+        display: none;
+    }
+    .ranges {
+        padding: 12px 16px;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        margin-top: 0px !important;
+        @media only screen and (max-width: 991.98px) {
+            display: none;
+        }
+        ul{
+            width: 160px;
+            li{
+                color:#2C2B32;
+                font-family: Inter;
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 20px;
+                text-align: left;
+                border-radius: 6px;
+                padding: 10px 16px;
+                &.active,&:hover{
+                    background:linear-gradient(0deg, #F3F5FC, #F3F5FC);
+                    color:#2C2B32;
+                }   
+            }
+        }
+    }
+    .drp-calendar{
+        padding: 20px 24px !important;
+        min-width: 328px;
+        display:block;
+        &.left{
+            border-left: 0px !important;
+            border-right: 1px solid #F4F4F4;
+        }
+        .calendar-table{
+            table{
+                tr{
+                    th{
+                        font-family: Inter;
+                        font-size: 14px;
+                        font-weight: 500;
+                        line-height: 20px;
+                        text-align: center;
+                        color:#2C2B32;
+                        width: 40px;
+                        height: 40px;
+                        min-width: 40px;
+                        &.month {
+                            font-family: Inter;
+                            font-size: 16px;
+                            font-weight: 600;
+                            line-height: 24px;
+                            text-align: center;
+                            color:#2C2B32;
+                            width: auto;
+                            height: 36px;
+                        }
+                        &.prev,&.next{
+                            width: 36px;
+                            height: 36px;
+                            min-width: 36px;
+                            border-radius: 50%;
+                            span{
+                                border-color:#757A89;
+                            }
+                            &:hover{
+                                background-color: #F3F5FC;
+                            }
+                        }
+                    }
+                }
+                tbody{
+                    tr{
+                        td{
+                            font-family: Inter;
+                            font-size: 14px;
+                            font-weight: 500;
+                            line-height: 20px;
+                            text-align: center;
+                            color:#2C2B32;
+                            width: 40px;
+                            height: 40px;
+                            min-width: 40px;
+                            border-radius: 100px;
+                            padding: 0px;
+                            border: 0px;
+                            &.in-range,&:hover{
+                                background-color: #F3F5FC !important;
+                            }
+                            &.active{
+                                background: linear-gradient(135.8deg, #5B8EE6 5.62%, #712DA7 95.63%) !important;
+                                color:#ffffff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .drp-buttons {
+        margin-left: 192px;
+        display: flex !important;
+        align-items: center;
+        justify-content: flex-end;
+        border-top: 1px solid #F4F4F4;
+        padding: 16px;
+        @media only screen and (max-width: 767.98px) {
+            margin-left: 0px;
+            // display: block !important;
+        }
+        .drp-selected {
+            font-family: Inter;
+            font-size: 14px !important;
+            font-weight: 500;
+            line-height: 24px;
+            margin-right: auto;
+            border: 1px solid #EAEDF3;
+            padding: 10px 14px;
+            border-radius: 8px;
+            @media only screen and (max-width: 767.98px) {
+                display: none;
+                text-align: left;
+                margin-bottom: .5rem;
+            }
+        }
+        button{
+            padding: 10px 24px !important;
+            border-radius: 100px !important;
+            border: none !important;
+            font-family: Inter;
+            font-size: 14px !important;
+            font-weight: 500 !important;
+            line-height: 20px;
+            @media only screen and (max-width: 767.98px) {
+                float: left;
+             }
+        }
+        .applyBtn{
+            background: linear-gradient(109.29deg, #5F81DE 0%, #6F3BB0 100%);
+            color:#fff;
+            margin-left: 16px !important;
+        }
+        .cancelBtn{
+            background-color: transparent;
+            color:#2C2B32;
+            border: 1px solid #EAEDF3 !important;
+            margin-left: 0px !important;
+           
+        }
+    }
+}

@@ -1,0 +1,12 @@
+.settlement-pg {
+    .smoothsWipe-table-header {
+        .select-wrapper {
+            min-width: 166px;
+        }
+    }
+    @media (min-width: 992px) and (max-width: 1200px) {
+        .page-header .page-action .total-earn-rcv {
+            min-width: 28rem;
+        }
+    }
+}

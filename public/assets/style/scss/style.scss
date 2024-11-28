@@ -1,0 +1,54 @@
+@import "./settings";
+@import "./mixins";
+
+@import "./components/datatable";
+@import "./components/daterangepicker";
+@import "./components/sidebar";
+@import "./components/select";
+@import "./components/header";
+@import "./components/cards";
+@import "./components/info-cards";
+@import "./components/alert";
+@import "./components/card-carousal";
+@import "./components/buttons";
+@import "./components/form";
+@import "./components/modal";
+@import "./components/navs";
+@import "./components/page";
+@import "./gateway-management";
+@import "./transactions";
+@import "./subscriptions";
+@import "./dashboard";
+@import "./settlement";
+@import "./components/collapse";
+
+body {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    overflow-x: hidden;
+}
+
+.content-container{
+    // height: 100vh;
+    // background-color: red;
+    width: calc(100vw - 290px);
+    margin-left: auto;
+    transition: all 0.4s ease-in-out;
+    padding: 36px 32px;
+    @media only screen and (max-width:991.98px){
+        width: 100%;
+        padding: 24px 16px 16px;
+    }
+}
+.content-container.menu-active{
+    width: 100vw !important;
+}
+
+@media only screen and (max-width:991.98px){
+    // aside {
+    //    display: none !important;
+    // }
+}
+
+
