@@ -10,14 +10,16 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="{{ asset('assets/vendors/bootstrap/bootstrap.min.css') }}">
+    <link rel="stylesheet"
+        href="https://fayshalrana.github.io/company-dashboard/public/assets/vendors/bootstrap/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
         integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
-    <!-- <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}"> -->
     <link rel="stylesheet" href="https://fayshalrana.github.io/company-dashboard/public/assets/css/style.css">
+    <link rel="stylesheet"
+        href="https://fayshalrana.github.io/company-dashboard/blob/main/public/assets/style/css/style.css">
 
     @yield('styles')
 </head>
@@ -43,7 +45,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/moment/min/moment.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
-    <script src="{{URL::asset('assets/js/common.js')}}"></script>
+    <script src="https://fayshalrana.github.io/company-dashboard/public/assets/js/common.js"></script>
 
     @yield('scripts')
 </body>

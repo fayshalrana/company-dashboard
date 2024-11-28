@@ -8,7 +8,7 @@ class UIController extends Controller
 {
     // Common Components
     public function commonComponents() {
-        return view('ui.index');
+        return view('index');
     }
     
     // Page
@@ -17,36 +17,36 @@ class UIController extends Controller
     }
 
     public function dashboardController() {
-        return view('ui.dashboard');
+        return view('.dashboard');
     }
 
     public function userMgmtController() {
-        return view('ui.user-mgmt');
+        return view('user-mgmt');
     }
 
     public function gatewayMgmtController() {
-        return view('ui.gateway-mgmt');
+        return view('gateway-mgmt');
     }
 
     public function transactionController() {
-        return view('ui.transaction');
+        return view('transaction');
     }
 
     public function subscriptionController() {
-        return view('ui.subscription');
+        return view('subscription');
     }
 
     public function settlementsController() {
-        return view('ui.settlements');
+        return view('settlements');
     }
 
     public function profileController() {
-        return view('ui.profile');
+        return view('profile');
     }
     
     // Component template
     public function sidebarComp() {
-        return view('ui.sidebar-template');
+        return view('sidebar-template');
     }
 
 }
