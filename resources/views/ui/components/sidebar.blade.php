@@ -4,7 +4,7 @@
             <div class="logo-container">
                 <img src=" {{ env('BASE_resources_URL') }}assets/img/Logo.webp" alt="">
             </div>
-            <h5>Company</h5>
+            <h5>Smooth Swipe</h5>
             <a href="javascript:" class="close-menu ms-auto" id="closeHam">
                 <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
